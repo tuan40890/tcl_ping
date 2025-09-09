@@ -7,7 +7,8 @@
 # tcl_ping2:
 - ping $address: This assumes that ping is a Tcl procedure or command that has been defined elsewhere in your Tcl script or loaded from a Tcl package. It does not directly execute the system's ping utility.
 
-# Output is the same for either script:
+# Output Example:
+- output is the same for either script:
 ```
 Router-IOSXE(tcl)#foreach address {
 +>192.168.0.1
