@@ -1,11 +1,11 @@
 # tcl_ping_script1:
-### exec "ping $VAR": This part executes the ping command as an external system command. It's equivalent to typing ping 192.168.0.2 directly into your operating system's command prompt (e.g., Bash on Linux/macOS, Command Prompt on Windows). The exec command captures the standard output of the external ping process.
-### puts [...]: This command then prints the captured output from the exec command to the Tcl script's standard output (usually your console).
+- exec "ping $VAR": This part executes the ping command as an external system command. It's equivalent to typing ping 192.168.0.2 directly into your operating system's command prompt (e.g., Bash on Linux/macOS, Command Prompt on Windows). The exec command captures the standard output of the external ping process.
+- puts [...]: This command then prints the captured output from the exec command to the Tcl script's standard output (usually your console).
 
 # tcl_ping_script2:
-### ping $address: This assumes that ping is a Tcl procedure or command that has been defined elsewhere in your Tcl script or loaded from a Tcl package. It does not directly execute the system's ping utility.
+- ping $address: This assumes that ping is a Tcl procedure or command that has been defined elsewhere in your Tcl script or loaded from a Tcl package. It does not directly execute the system's ping utility.
 
-### Output Example:
+#### Output Example:
 ```
 Router-IOSXE(tcl)#foreach address {
 +>192.168.0.1
