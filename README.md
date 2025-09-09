@@ -1,3 +1,5 @@
+(Scripts executed on IOS-XE 17.15.3a)
+
 # tcl_ping_script1:
 - exec "ping $VAR": This part executes the ping command as an external system command. It's equivalent to typing ping 192.168.0.2 directly into your operating system's command prompt (e.g., Bash on Linux/macOS, Command Prompt on Windows). The exec command captures the standard output of the external ping process.
 - puts [...]: This command then prints the captured output from the exec command to the Tcl script's standard output (usually your console).
